@@ -1,5 +1,3 @@
-
-
 function CoinChart(){
 	return (
 	    <div className="bg-[#241F2A] h-fit p-3 px-5 w-full rounded-lg mb-5 text-white">
