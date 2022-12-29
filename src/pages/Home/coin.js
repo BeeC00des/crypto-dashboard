@@ -1,4 +1,4 @@
-import { Sidebar, Card, CheckCoin} from "../../components";
+import { Sidebar, Card, CoinChart} from "../../components";
 // import React, { useState } from "react";
 // import apiClient from "../../utils/api-calls/get-coin-list";
 import "./index.css";
@@ -34,23 +34,6 @@ const Home = () => {
     },
   ];
 
-//   const coinItems =[
-//     {
-//         id:1,
-//         coinType: "Bitcoin(BTC)",
-//         coinPrice: 150000
-//     },
-//     {
-//       id:2,
-//       coinType: "Etherum(ETH)",
-//       coinPrice: 137000
-//     },
-//     {
-//       id:2,
-//       coinType: "Solona(SOL)",
-//       coinPrice: 137000
-//     }
-//   ];
 
   
   return (
@@ -60,19 +43,19 @@ const Home = () => {
         <div className="w-full">
           <div className="flex justify-between input-container sm:w-auto md:w-full">
             <div className="relative w-8/12">
-              <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <svg
                   aria-hidden="true"
-                  class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                  className="w-5 h-5 text-gray-500 dark:text-gray-400"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                   ></path>
                 </svg>
@@ -80,7 +63,7 @@ const Home = () => {
               <input
                 type="search"
                 id="default-search"
-                class="block w-full p-4 pl-10 text-sm text-white border-2 bg-transparent rounded-lg border-gray-600 placeholder-gray-400  focus:outline-none"
+                className="block w-full p-4 pl-10 text-sm text-white border-2 bg-transparent rounded-lg border-gray-600 placeholder-gray-400  focus:outline-none"
                 placeholder="Search Mockups"
                 required
               />
@@ -89,7 +72,7 @@ const Home = () => {
             <input
                 type="search"
                 id="default-search"
-                class="block w-full p-4 text-sm text-gray-900 bg-[#241F2A] rounded-lg placeholder-gray-400  focus:outline-none"
+                className="block w-full p-4 text-sm text-gray-900 bg-[#241F2A] rounded-lg placeholder-gray-400  focus:outline-none"
                 placeholder="Search Date"
                 required
               />
@@ -98,8 +81,7 @@ const Home = () => {
          
           <div className="flex justify-between mt-3">
             <div className="w-full">
-              {/* <MarketLeaderCard  coinItems={coinItems} /> */}
-              <CheckCoin />
+              <CoinChart />
             </div> 
           
            

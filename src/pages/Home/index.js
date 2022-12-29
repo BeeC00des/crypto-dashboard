@@ -98,8 +98,8 @@ const Home = () => {
                   All Coin
                 </h1>
                 <div className="grid grid-cols-4 gap-4 text-center">
-                  {marketData.slice(0, 7).map((item) => (
-                    <AllCoinCard key={item.id} coinItems={item.item} />
+                  {marketData.slice(0, 7).map((item, key) => (
+                    <AllCoinCard key={key} coinItems={item.item} />
                   ))}
                 </div>
               </div>
